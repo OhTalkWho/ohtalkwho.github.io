@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light background for a clean look */
+    color: #333; /* Dark gray text */
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #4CAF50; /* Green accent for the title */
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff; /* White background for the content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  form select,
+  form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+  }
+  
+  /* Results Section */
+#results {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f8ff; /* Light blue background */
+    border: 1px solid #d1e7fd; /* Slightly darker border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  #results h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  #results p {
+    font-size: 1.2rem;
+    color: #4CAF50; /* Green for positive emphasis */
+    margin: 8px 0;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Custom Inputs*/
+  #custom-inputs {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  #custom-inputs h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #custom-inputs label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  #custom-inputs input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  /* Title Container Styling */
+  .title-container {
+    position: relative; /* Ensures proper positioning of text and background */
+    text-align: center; /* Centers the title text */
+    padding: 100px 20px; /* Adds vertical space to accommodate the fox */
+    background: url('fox2.png') no-repeat center;
+    background-size: contain; /* Ensures the mascot scales nicely */
+    background-position: 30% -25px; /* Moves the fox image up */
+  }
+  
+  .title-container h1 {
+    position: relative; /* Ensures text is above the background */
+    z-index: 1; /* Places the text above the background */
+    font-size: 3rem; /* Adjust the font size of "JLPT" */
+    color: #4CAF50; /* Adjust text color for visibility */
+  }
+  
+  .title-container p {
+    position: relative; /* Ensures paragraph text is above the background */
+    z-index: 1;
+    color: #555;
+  }
+  
+  .title-container::before {
+    content: ""; /* Optional overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0); /* Transparent overlay */
+    z-index: 0; /* Ensures it stays below text */
