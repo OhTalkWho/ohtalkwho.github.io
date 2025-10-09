@@ -180,4 +180,39 @@
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0); /* Transparent overlay */
+
     z-index: 0; /* Ensures it stays below text */
+
+/* Grammar Card Styling */
+.grammar-card {
+  background: #f0f8ff;
+  border: 1px solid #d1e7fd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.grammar-card:hover {
+  transform: translateY(-3px);
+}
+
+.grammar-card h3 {
+  margin-bottom: 5px;
+  color: #4CAF50;
+}
+
+.grammar-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.grammar-card a {
+  color: #4CAF50;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.grammar-card a:hover {
+  text-decoration: underline;
+}
