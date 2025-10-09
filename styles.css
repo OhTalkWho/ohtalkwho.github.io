@@ -28,7 +28,20 @@
     font-size: 1.2rem;
     color: #555;
   }
-  
+
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
   /* Main Content */
   main {
     max-width: 600px;
@@ -216,3 +229,4 @@
 .grammar-card a:hover {
   text-decoration: underline;
 }
+
