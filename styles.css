@@ -193,8 +193,8 @@
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0); /* Transparent overlay */
-
     z-index: 0; /* Ensures it stays below text */
+  }
 
 /* Grammar Card Styling */
 .grammar-card {
@@ -229,4 +229,3 @@
 .grammar-card a:hover {
   text-decoration: underline;
 }
-
